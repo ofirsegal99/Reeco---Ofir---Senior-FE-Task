@@ -1,0 +1,128 @@
+:root {
+  --green-11: #2d9f6f;  /* Deep Green */
+  --green-9: #66d1a7;   /* Mid Green */
+  --green-6: #99e2c3;   /* Light Green */
+  --green-1: #e0f7f1;   /* Very Light Green */
+  --mint-3: #f1fdf8;    /* Soft Mint */
+  --mint-8: #c2d8d1;    /* Muted Mint */
+  --mint-11:rgb(51, 85, 75);   /* Soft Mint for text or labels */
+  --black-a7: rgba(0, 0, 0, 0.25); /* Black with alpha */
+  --fontSize: 1rem;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  font-size: clamp(0.6rem, 1vw, 1rem);
+}
+
+#root {
+  display: flex;
+  padding: 3rem;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  width: 100%;
+}
+
+.Options {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.SliderContainer {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.CategoryChip {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+  width: 6rem;
+}
+
+.CategoryChipIcon {
+  font-size:2.5rem;
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 50%;
+  background: var(--circleColor, black); 
+}
+
+.CategoryChipName {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.CategoryChipDescription {
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.productCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.productCardImage {
+  border-radius: 1rem;
+  height: 8rem;
+  object-fit: cover;
+  width: 9rem;
+}
+
+.productCardDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 0;
+  gap: 1rem;
+  max-width:10rem;
+  max-height:8rem;
+}
+
+.productCardName {
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+  color: var(--mint-11);
+}
+
+.productCardDescription {
+  font-family: "Kanit", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size:0.75rem
+}
